@@ -26,8 +26,10 @@ $(function(){
 	$el.click(function(evt){
 		if (evt.which == 2){
 			$(this).remove();
+			if ($('li').length <= 5){
+				$('h3').remove();
 			}
-	
+	}
 			$(this).css({background: 'lightgrey'});
 		
 		});
